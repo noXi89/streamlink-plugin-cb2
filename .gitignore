@@ -1,0 +1,3 @@
+*
+!.gitignore
+!pkgs/streamlink/plugins/chaturbate2.py

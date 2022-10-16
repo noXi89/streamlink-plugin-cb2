@@ -22,19 +22,9 @@ _post_schema = validate.Schema(
 
 @pluginmatcher(_url_re)
 class Chaturbate(Plugin):
-    #@classmethod
-    #def can_handle_url(cls, url):
-    #    return _url_re.match(url)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-
-    def __init_3_(self, session, account_id, player_id="default_default"):
-        self.session = session
-        self.account_id = account_id
-        self.player_id = player_id
-        self.title = None
-        log.debug(f"Creating player for account {account_id} (player_id={player_id})")
 
     def _get_streams(self):
         match = _url_re.match(self.url)
